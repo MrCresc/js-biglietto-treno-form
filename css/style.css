@@ -1,0 +1,40 @@
+body {
+  background-color: #b91450;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+
+input {
+  display: block;
+  margin: auto;
+  border: 1px solid #b91450;
+  border-radius: 5px;
+}
+
+select {
+  display: block;
+  margin: auto;
+  border: 1px solid #b91450;
+  border-radius: 5px;
+}
+
+.form-wrapper {
+  margin: auto;
+  width: 70%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px 0;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.wrapper-buttons {
+  padding: 40px 0 10px;
+  margin: auto;
+}
