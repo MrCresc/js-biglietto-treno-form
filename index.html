@@ -8,36 +8,76 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1 class="text-center">Calcola il prezzo del tuo biglietto</h1>
 
-    <section class="form-wrapper text-center">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-4">
-            <label>Nome Cognome</label>
-            <input id="form-nome" type="text">
-          </div>
+    <main>
 
-          <div class="col-xs-4">
-            <label>Km da percorrere</label>
-            <input id="form-km" type="number">
-          </div>
+      <h1 class="text-center">Calcola il prezzo del tuo biglietto</h1>
 
-          <div class="col-xs-4">
-            <label>Fascia d'età</label>
-            <select id="form-eta">
-              <option value="maggiorenne">Maggiorenne</option>
-              <option value="minorenne">Minorenne</option>
-              <option value="over">Over 65</option>
-            </select>
+      <section class="form-wrapper rounded text-center">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-4">
+              <label>Nome Cognome</label>
+              <input class="customstyle" id="form-nome" type="text" placeholder="Inserisci il tuo nome">
+            </div>
+
+            <div class="col-xs-4">
+              <label>Km da percorrere</label>
+              <input class="customstyle" id="form-km" type="number" placeholder="Inserisci i km">
+            </div>
+
+            <div class="col-xs-4">
+              <label>Fascia d'età</label>
+              <select class="customstyle" id="form-eta">
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="minorenne">Minorenne</option>
+                <option value="over">Over 65</option>
+              </select>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="wrapper-buttons">
-        <button type="button" name="button">Genera</button>
-        <button type="button" name="button">Annulla</button>
-      </div>
-    </section>
+        <div class="wrapper-buttons">
+          <button type="button" name="button">Genera</button>
+          <button type="button" name="button">Annulla</button>
+        </div>
+      </section>
+
+      <h1 class="text-center">Il tuo biglietto</h1>
+
+      <section class="form-wrapper">
+        <h2>Dettaglio passeggeri</h2>
+        <div class="container-fluid">
+          <div class="row row-bordered">
+            <div class="col-xs-2 col-gray">
+              <h4>Nome passeggero</h4>
+              <p id="bigl-nome"></p>
+            </div>
+
+            <div class="col-xs-2">
+              <h5>Offerta</h5>
+              <p id="bigl-offerta"></p>
+            </div>
+
+            <div class="col-xs-2">
+              <h5>Carrozza</h5>
+              <p id="bigl-carrozza"></p>
+            </div>
+
+            <div class="col-xs-2">
+              <h5>Codice CP</h5>
+              <p id="bigl-codice"></p>
+            </div>
+
+            <div class="col-xs-2">
+              <h5>Costo Biglietto</h5>
+              <p id="bigl-costo"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
   </body>
 </html>

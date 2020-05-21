@@ -1,33 +1,47 @@
 body {
   background-color: #b91450;
+  color: black;
 }
 
 h1 {
   text-transform: uppercase;
   color: white;
   font-weight: 600;
+  margin: 20px 0;
 }
 
-input {
+h2 {
+  padding-left: 25px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.customstyle {
   display: block;
   margin: auto;
   border: 1px solid #b91450;
   border-radius: 5px;
-}
-
-select {
-  display: block;
-  margin: auto;
-  border: 1px solid #b91450;
-  border-radius: 5px;
+  text-align: center;
 }
 
 .form-wrapper {
   margin: auto;
-  width: 70%;
+  width: 90%;
   background-color: white;
-  border-radius: 15px;
   padding: 25px 0;
+}
+
+.rounded {
+  border-radius: 15px;
 }
 
 .container-fluid {
@@ -37,4 +51,12 @@ select {
 .wrapper-buttons {
   padding: 40px 0 10px;
   margin: auto;
+}
+
+.row-bordered {
+  border: 1px solid gray;
+}
+
+.col-gray {
+  background-color: gray;
 }
