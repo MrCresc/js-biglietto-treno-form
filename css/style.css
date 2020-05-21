@@ -1,3 +1,4 @@
+/* Stili Base */
 body {
   background-color: #b91450;
   color: black;
@@ -28,47 +29,67 @@ h4 {
 h5 {
   font-weight: bold;
 }
+/* Fine Stili Base */
 
+/* Stile input vari */
 .customstyle {
   display: block;
   margin: auto;
   border: 1px solid #b91450;
   border-radius: 5px;
   text-align: center;
+  width: 100%;
 }
+/* Stile input vari */
 
+/* Wrapper */
 .form-wrapper {
   margin: auto;
   width: 90%;
   background-color: white;
   padding: 25px 0;
 }
+/* Fine Wrapper */
 
+/* Wrapper rounded */
 .rounded {
   border-radius: 15px;
 }
+/* Fine Wrapper rounded */
 
+/* Container Fluid */
 .container-fluid {
   width: 100%;
 }
+/* Fine Container Fluid */
 
+/* Wrapper Buttons */
 .wrapper-buttons {
   padding: 40px 0 10px;
   margin: auto;
 }
+/* Fine Wrapper Buttons */
 
+/* Row Bordered */
 .row-bordered {
   border: 1px solid gray;
 }
+/* Fine Row Bordered */
 
+/* BG Color prima colonna */
 .col-gray {
   background-color: gray;
 }
+/* Fine BG Color prima colonna */
 
+/* Classe invisibilità */
 .hidden {
   display: none;
 }
+/* Fine Classe invisibilità */
 
+/* Classe visibilità */
 .visible {
   display: block;
 }
+/* Fine Classe visibilità */

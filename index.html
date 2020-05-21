@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Biglietto Treno Form</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -12,21 +13,21 @@
     <main>
 
       <h1 class="text-center">Calcola il prezzo del tuo biglietto</h1>
-
+      <!-- Sezione Form -->
       <section class="form-wrapper rounded text-center">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-xs-4">
+            <div class="col-xs-offset-2 col-xs-8 col-sm-offset-3 col-sm-2">
               <label>Nome Cognome</label>
               <input id="form-nome" class="customstyle" type="text" placeholder="Inserisci il tuo nome">
             </div>
 
-            <div class="col-xs-4">
+            <div class="col-xs-offset-2 col-xs-8 col-sm-2">
               <label>Km da percorrere</label>
               <input id="form-km" class="customstyle" type="number" placeholder="Inserisci i km">
             </div>
 
-            <div class="col-xs-4">
+            <div class="col-xs-offset-2 col-xs-8 col-sm-2">
               <label>Fascia d'età</label>
               <select id="form-eta" class="customstyle">
                 <option value="maggiorenne">Maggiorenne</option>
@@ -42,40 +43,43 @@
           <button id="annulla" type="button" name="button">Annulla</button>
         </div>
       </section>
+      <!-- Fine Sezione Form -->
 
       <h1 class="text-center">Il tuo biglietto</h1>
 
+      <!-- Sezione Biglietto -->
       <section id="biglietto" class="form-wrapper hidden">
         <h2>Dettaglio passeggeri</h2>
         <div class="container-fluid">
           <div class="row row-bordered">
-            <div class="col-xs-1 col-gray">
+            <div class="col-xs-12 col-sm-1 col-gray">
               <h4>Nome passeggero</h4>
               <p id="bigl-nome"></p>
             </div>
 
-            <div class="col-xs-1">
+            <div class="col-xs-offset-2 col-xs-8 col-sm-1">
               <h5>Offerta</h5>
               <p id="bigl-offerta"></p>
             </div>
 
-            <div class="col-xs-1">
+            <div class="col-xs-offset-2 col-xs-8 col-sm-1">
               <h5>Carrozza</h5>
               <p id="bigl-carrozza"></p>
             </div>
 
-            <div class="col-xs-1">
+            <div class="col-xs-offset-2 col-xs-8 col-sm-1">
               <h5>Codice CP</h5>
               <p id="bigl-codice"></p>
             </div>
 
-            <div class="col-xs-1">
+            <div class="col-xs-offset-2 col-xs-8 col-sm-1">
               <h5>Costo Biglietto</h5>
               <p id="bigl-costo"></p>
             </div>
           </div>
         </div>
       </section>
+      <!-- Fine Sezione Biglietto -->
 
     </main>
       <script src="js/script.js"></script>
