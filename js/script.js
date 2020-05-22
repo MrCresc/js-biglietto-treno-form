@@ -7,6 +7,9 @@ var buttonGenera = document.getElementById('genera');
 var buttonAnnulla = document.getElementById('annulla');
 // Variabile sezione biglietto
 var sezioneBiglietto = document.getElementById('biglietto')
+// Generazione numeri Carrozza e Codice Prenotazione
+var randomCarrozza = Math.floor(Math.random() * 10) + 1;
+var randomCodice = Math.floor(Math.random() * 10) + 9000;
 
 // -------------------------------------------------------------------
 
@@ -36,8 +39,8 @@ buttonGenera.addEventListener('click',
       // Trascrizioni in HTML
       document.getElementById('bigl-nome').innerHTML = nomeValue;
       document.getElementById('bigl-offerta').innerHTML = offerta;
-      document.getElementById('bigl-carrozza').innerHTML = Math.floor(Math.random() * 10) + 1;
-      document.getElementById('bigl-codice').innerHTML = Math.floor(Math.random() * 10) + 9000;
+      document.getElementById('bigl-carrozza').innerHTML = randomCarrozza;
+      document.getElementById('bigl-codice').innerHTML = randomCodice;
       document.getElementById('bigl-costo').innerHTML = prezzoFinale.toFixed(2) + ' €';
       // Applicazione classe visibilità
       sezioneBiglietto.className = 'form-wrapper visible'
