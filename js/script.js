@@ -10,8 +10,30 @@ var sezioneBiglietto = document.getElementById('biglietto')
 // Generazione numeri Carrozza e Codice Prenotazione
 var randomCarrozza = Math.floor(Math.random() * 10) + 1;
 var randomCodice = Math.floor(Math.random() * 10) + 9000;
-
+// Easter egg dark mode
+var darkMode = document.getElementById('darkmode');
+var lightMode = document.getElementById('lightmode');
+var body = document.getElementById('body');
 // -------------------------------------------------------------------
+
+// Dark mode
+darkMode.addEventListener('click',
+  function () {
+    body.className = 'darkmode'
+    formNome.className = 'inputdark'
+    formKm.className = 'inputdark'
+    formEta.className = 'inputdark'
+  }
+)
+// Reset dark mode
+lightMode.addEventListener('click',
+  function () {
+    body.className = ''
+    formNome.className = 'customstyle'
+    formKm.className = 'customstyle'
+    formEta.className = 'customstyle'
+  }
+)
 
 // Click bottone genera
 buttonGenera.addEventListener('click',

@@ -5,6 +5,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.darkmode {
+  background: rgb(0,34,51);
+  background: radial-gradient(circle, rgba(0,34,51,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+i {
+  color: gray;
+}
+
+
 h2 {
   padding-left: 25px;
   padding-bottom: 10px;
@@ -32,6 +42,28 @@ h5 {
   font-weight: bold;
 }
 /* Fine Stili Base */
+
+/* Stile toggle */
+.fa-sun:hover {
+  cursor: pointer;
+  color: white;
+}
+/* Fine Stile toggle */
+
+/* Stile input darkmode */
+.inputdark {
+  border: 1px solid #002233;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.inputdark:focus {
+  background-color: rgb(0,34,51);
+}
+/* Fine Stile input darkmode */
 
 /* Stile input vari */
 .customstyle {
