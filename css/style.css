@@ -30,6 +30,7 @@ h2 {
   color: white;
   font-weight: 600;
   margin: 20px 0;
+  padding: 0;
 }
 
 h4 {
@@ -88,6 +89,10 @@ select:focus {
   width: 90%;
   background-color: white;
   padding: 25px 0;
+}
+
+.darkwrapper {
+  background-color: #002233;
 }
 /* Fine Wrapper */
 
